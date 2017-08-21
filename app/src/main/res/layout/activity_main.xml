@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0,1"
+    android:gravity="center_vertical"
+    >
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:text="0"
+            android:layout_gravity="right|center"
+            android:textAppearance="@style/myStyle" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_gravity="left"
+            android:onClick="sails"
+            android:src="@drawable/icon_sails"/>
+    </TableRow>
+
+    <!-- just draw a red line -->
+    <View
+        android:layout_height="2dp"
+        android:background="#FF0000" />
+    <!-- edittext span 2 column -->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:text="0"
+            android:layout_gravity="right|center"
+            android:textAppearance="@style/myStyle" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_gravity="left"
+            android:onClick="engine"
+
+            android:src="@drawable/icon_engine"/>
+    </TableRow>
+
+    <!-- just draw a red line -->
+    <View
+        android:layout_height="2dp"
+        android:background="#FF0000" />
+
+    <!-- 3 columns -->
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:text="0"
+            android:layout_gravity="right|center"
+            android:textAppearance="@style/myStyle" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_gravity="left"
+            android:onClick="anchor"
+            android:src="@drawable/icon_anchor"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="20dp" >
+        <TextView
+            android:id="@+id/textView4"
+
+            android:text="Total:"
+            android:gravity="right|center"
+            android:textAppearance="@style/myStyle" />
+        <TextView
+            android:id="@+id/textView5"
+            android:text="0"
+            android:gravity="left|center"
+            android:textAppearance="@style/myStyle" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:text="Stop"
+            android:gravity="center"
+            android:onClick="sumUp"
+            android:textAppearance="@style/myStyle"/>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:text="Reset"
+            android:gravity="center"
+            android:onClick="reset"
+            android:textAppearance="@style/highlighted"/>
+    </TableRow>
+
+
+</TableLayout>
